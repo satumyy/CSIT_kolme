@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Tervetuloa</title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="csit_tyylit.css">
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Heebo" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Bitter:700" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<section id="header1">
+		<h2>Tervetuloa CSIT itsepavelu portaaliin!</h2>
+	</section>
+
+	<nav id="nav">
+		<ul>
+			<li><a href="#OMATTIEDOT">OMAT TIETOSI</a></li>
+  			<li><a href="#TYOSUHDE">TYÖSUHTEEN TIEDOT</a></li>
+  			<li><a href="#TULEVATVUOROT">TULEVAT TYÖVUOROSI</a></li>
+  		</ul>
+	</nav>
+
+
+	<main>
+		<article id="jml">
+			
+  		
+		
+
+		</article>
+
+
+
+	<section id="row1">
+		<h1 id="jasenet">MEMBERS</h1>
+		<section id="row1">
+
+			<script>
+				var app = angular.module("myJMLHandle", []); 
+				app.controller("myCtrl", function($scope) {
+  
+    				$scope.generateHandle = function () {
+        				var ekaNimi = $scope.addEkaNimi.toLowerCase();
+        				var tokaNimi = $scope.addTokaNimi.toLowerCase();
+
+        				var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+       					var adjektiivit = ["poliittinen","huono","kärttyinen","humalainen","eläimellinen","färjan","köyhä","laiska","ällöttävä","likainen","suuri","iso","pieni","täydellinen","halpa","haitallinen","pöljä","rakastettava","vihattu","omituinen","pihi","uskonnollinen","keskustalainen","isänmaallinen","valkoinen","tumma"];
+        				var substanttiivit = ["kekkonen","jumalautian","perkele","sika","sovinisti","viikinki","färjan","hikari","nörtti","koodari","luuseri","heteromies","poliitikko","lakimies","kakkiainen","meritähti","oikeustoimihenkilö","maitotuote","hallitsija","taiteilija","jumalatar","trolli","tanskalainen","esimerkki","päätepysäkki","veronmaksaja"]
+
+        
+
+        				var adjektiivi = adjektiivit[letters.indexOf(ekaNimi.slice(0,1))];
+
+        				var substanttiivi = substanttiivit[letters.indexOf(tokaNimi.slice(0,1))];
+        
+        				var handle = adjektiivi + " " + substanttiivi;
+
+        				$scope.jumalautaHandle = "Your Jumalauta Handle is " + handle;
+    				}    
+				});
+			</script>
+
+			<div ng-app="myJMLHandle" ng-controller="myCtrl">
+				<p>We have a lot of members. We are always recruiting more and we would like to welcome you to become a member of Jumalauta. Here you can generate your own Jumalauta handle and become a productive and proud member of Jumalauta. (we do not accept any complaints if the generator gives the same name for several people)</p>
+				<br>
+			 	<p>Your fisrt name: <input ng-model="addEkaNimi"></p>
+				<p>Your Last name:<input ng-model="addTokaNimi"></p>
+				<p><button ng-click="generateHandle()">Add</button></p>
+				<p>{{jumalautaHandle}}</p>
+			</div>
+		</section>
+	</section>
+
+
+
+
+	
+
+
+	
+
+	
+
+	</main>
+	
+
+	<section id="footer">
+		<p>Ryhmä Kolme. 2020</p>
+	</section>
+
+
+
+</body>
+
+</html>

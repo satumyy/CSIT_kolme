@@ -1,0 +1,120 @@
+body{
+	width: 100%;
+	background-image: url(maalaus.jpg);
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative; 
+}
+
+#header1 h2 {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: transparent;
+	font-family: 'Bitter', serif;
+	color: white;
+	font-size: 120px;
+	text-shadow: 2px 2px 3px black, 0px 0px 10px #3C2F30;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+
+#nav ul {
+	width: 100%;
+	background-color: white;
+	font-family: 'Bitter', serif;
+	font-size: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background-color: #714CDE;
+}
+
+
+#row1 {
+	background-color: #f0f0f0;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	float: left; 
+	box-align: left;
+	width: 100%;
+	margin-left: initial;
+	font-family: 'Heebo', sans-serif;
+	font-size: 20px;
+}
+
+#row1 p{
+	padding:2%;
+}
+
+#row1 h1{
+	font-family: 'Bitter', serif;
+	font-size: 60px;
+	padding-top: %
+	padding-bottom: :2%;
+	margin-left: 5%;
+	text-align: left;
+}
+
+
+
+#column1 {
+	float: left;
+    width: 50%;
+    padding: 0;
+	background-color: #f0f0f0;
+	margin: 0;
+	position: relative;
+	box-align: left;
+	margin-left: initial;
+	font-family: 'Heebo', sans-serif;
+	font-size: 20px;
+}
+
+#column1 p{
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: 1%;
+	background-color: #f0f0f0;
+}
+
+#column2 {
+    width: 33,3%;
+    padding: 0;
+	background-color: #f0f0f0;
+	margin: 0;
+ }
+
+ #youtube {
+ 	text-align: center;
+ }
+
+#footer {
+	background-color: #f0f0f0;
+	font-family: 'Heebo', sans-serif;
+	width: 100%;
+	margin-left: initial;
+	float: center;
+	text-align: center;
+}
