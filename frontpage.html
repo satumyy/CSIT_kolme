@@ -12,9 +12,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 
 </head>
 
@@ -26,60 +30,116 @@
 	<nav id="nav">
 		<ul>
 			<li><a href="#OMATTIEDOT">OMAT TIETOSI</a></li>
-  			<li><a href="#TYOSUHDE">TYÖSUHTEEN TIEDOT</a></li>
-  			<li><a href="#TULEVATVUOROT">TULEVAT TYÖVUOROSI</a></li>
+  			<li><a href="login.html">KIRJAUDU ULOS</a></li>
   		</ul>
 	</nav>
 
 
 	<main>
-		<article id="jml">
-			
-  		
-		
-
-		</article>
 
 
 
 	<section id="row1">
-		<h1 id="jasenet">MEMBERS</h1>
-		<section id="row1">
 
-			<script>
-				var app = angular.module("myJMLHandle", []); 
-				app.controller("myCtrl", function($scope) {
+		 <h1>TYÖVUOROSI</h1>
+
+		<table style="width:100%">
+  			<tr>
+    			<th>MA</th>
+    			<th>TI</th> 
+    			<th>KE</th>
+    			<th>TO</th>
+    			<th>PE</th> 
+    			<th>LA</th>
+    			<th>SU</th>
+  			</tr>
+  			<tr>
+   				<th>Aika</th>
+    			<th>Aika</th> 
+    			<th>Aika</th>
+    			<th>Aika</th>
+    			<th>Aika</th> 
+    			<th>Aika</th>
+    			<th>Aika</th>
+  			</tr>
+  			<tr>
+   				<td>Osasto</td>
+    			<th>Osasto</th>
+    			<td>Osasto</td>
+    			<th>Osasto</th>
+				<td>Osasto</td>
+    			<th>Osasto</th>
+    			<td>Osasto</td>
+  			</tr>
+		</table>
+
+
+		<h1>ILMOITUKSET:</h1>
+
+		<P>Tuleville päiville olisi vapaita työvuoroja osastolla x. Ilmoittaudu työvuoroon tästä!</P>
+
+
+		<h1 id="jasenet">TIETOSI</h1>
+		
+		<P>Etunimi</P>
+		<p>Sukunimi</P>
+		<P>Osoite</P>
+		<p>Postinumero ja kaupunki</P>
+		<P>Sähköpostiosoite</P>
+		<p>Puhelinnumero</P>
+		
+		<div class="container mt-3">
+  			<!-- Button to Open the Modal -->
+  			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    			MUOKKAA TIETOJASI
+  			</button>
+
+  			<!-- The Modal -->
+ 			<div class="modal fade" id="myModal">
+    		<div class="modal-dialog">
+      		<div class="modal-content">
+      
+        	<!-- Modal Header -->
+        	<div class="modal-header">
+          		<h4 class="modal-title">Muuta tietoja</h4>
+
+          		<button type="button" class="close" data-dismiss="modal">×</button>
+        	</div>
+        
+        	<!-- Modal body -->
+        	<div class="modal-body">
+          		<div class="container">
+              		<label for="uname"><b>Etunimi</b></label>
+              		<input type="text" placeholder="etunimi" name="uname" required>
+              		<br>
+              		<label for="uname"><b>Sukunimi</b></label>
+              		<input type="text" placeholder="Sukunimi" name="uname" required> 
+            	</div>
+        	</div>
+        
+        	<!-- Modal footer -->
+        	<div class="modal-footer">
+          		<button type="button" class="btn btn-danger" data-dismiss="modal">Muuta tiedot</button>
+        	</div>
+        
+      	</div>
+    </div>
+  </div>
   
-    				$scope.generateHandle = function () {
-        				var ekaNimi = $scope.addEkaNimi.toLowerCase();
-        				var tokaNimi = $scope.addTokaNimi.toLowerCase();
+</div>
 
-        				var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
-       					var adjektiivit = ["poliittinen","huono","kärttyinen","humalainen","eläimellinen","färjan","köyhä","laiska","ällöttävä","likainen","suuri","iso","pieni","täydellinen","halpa","haitallinen","pöljä","rakastettava","vihattu","omituinen","pihi","uskonnollinen","keskustalainen","isänmaallinen","valkoinen","tumma"];
-        				var substanttiivit = ["kekkonen","jumalautian","perkele","sika","sovinisti","viikinki","färjan","hikari","nörtti","koodari","luuseri","heteromies","poliitikko","lakimies","kakkiainen","meritähti","oikeustoimihenkilö","maitotuote","hallitsija","taiteilija","jumalatar","trolli","tanskalainen","esimerkki","päätepysäkki","veronmaksaja"]
+	
 
-        
 
-        				var adjektiivi = adjektiivit[letters.indexOf(ekaNimi.slice(0,1))];
+		<P>Työsuhde</P>
+		<P>Työrooli</P>
+		<p>Työsuhteen alkamispäivä</P>
 
-        				var substanttiivi = substanttiivit[letters.indexOf(tokaNimi.slice(0,1))];
-        
-        				var handle = adjektiivi + " " + substanttiivi;
+		<P>Esimies</P>
+		<p>Yksikkö</P>
 
-        				$scope.jumalautaHandle = "Your Jumalauta Handle is " + handle;
-    				}    
-				});
-			</script>
 
-			<div ng-app="myJMLHandle" ng-controller="myCtrl">
-				<p>We have a lot of members. We are always recruiting more and we would like to welcome you to become a member of Jumalauta. Here you can generate your own Jumalauta handle and become a productive and proud member of Jumalauta. (we do not accept any complaints if the generator gives the same name for several people)</p>
-				<br>
-			 	<p>Your fisrt name: <input ng-model="addEkaNimi"></p>
-				<p>Your Last name:<input ng-model="addTokaNimi"></p>
-				<p><button ng-click="generateHandle()">Add</button></p>
-				<p>{{jumalautaHandle}}</p>
-			</div>
 		</section>
 	</section>
 
@@ -103,5 +163,7 @@
 
 
 </body>
+
+
 
 </html>
