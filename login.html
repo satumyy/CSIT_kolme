@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8" />
         <title></title>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="csit_tyylit.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+	      <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">  
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -14,6 +17,9 @@
 
     </head>
     <body>
+      <section id="header1">
+        <h3>KIRJAUDU SISÄÄN CSIT IDEM JÄRJESTELMÄÄN</h3>
+      </section>
         <div class="container">
             <div class="nav-wrapper">
                 <div class="left-side">
@@ -24,21 +30,21 @@
            </div>
            <div>
           
-            <div class="container">
-              <label for="uname"><b>KÄYTTÄJÄNIMI</b></label>
-              <input type="text" placeholder="etunimi.sukunimi@sairaala.fi" name="uname" required>
+            <div class="container" container id="container">
+              <label for="uname"><b>KÄYTTÄJÄTUNNUS</b></label> <br>
+              <input type="text" placeholder="etunimi.sukunimi@sairaala.fi" name="uname" required> <br> <br>
           
-              <label for="psw"><b>SALASANA</b></label>
-              <input type="password" name="psw" required>
+              <label for="psw"><b>SALASANA</b></label> <br>
+              <input type="password" name="psw" required> <br> <br> <br>
           
-              <button type="button" onclick="toFrontpage()" >KIRJAUDU</button>
+              <button type="button" onclick="toFrontpage()" >KIRJAUDU</button> <br> <br>
               <label>
                 <input type="checkbox" checked="checked" name="remember"> MUISTA MINUT
               </label>
             </div>
           
-            <div class="container" style="background-color:#f1f1f1">
-              <span class="psw"><a href="#">UNOHTUIKO SALASANA?</a></span>
+            <div class="container" psw id="forget">
+              <span class="psw"><a href="#">Unohtuiko salasana?</a></span>
             </div>
           </div>
            <div class="content-wrapper">
