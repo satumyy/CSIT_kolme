@@ -48,31 +48,31 @@
 
 		<table id="schedule">
   			<tr>
-    			<th id="tanaan"></th>
-    			<th>TI</th> 
-    			<th>KE</th>
-    			<th>TO</th>
-    			<th>PE</th> 
-    			<th>LA</th>
-    			<th>SU</th>
+    			<th id="day1"></th>
+    			<th id="day2"></th> 
+    			<th id="day3"></th>
+    			<th id="day4"></th>
+    			<th id="day5"></th> 
+    			<th id="day6"></th>
+    			<th id="day7"></th>
   			</tr>
   			<tr>
-   				<td>Aika</td>
-    			<td>Aika</td> 
-    			<td>Aika</td>
-    			<td>Aika</td>
-    			<td>Aika</td> 
-    			<td>Aika</td>
-    			<td>Aika</td>
+   				<td>Klo 16-22</td>
+    			<td>Klo 17-22</td> 
+    			<td>Klo 16-22</td>
+    			<td>Vapaa</td>
+    			<td>Vapaa</td> 
+    			<td>Klo 08-16</td>
+    			<td>Klo 10-18</td>
   			</tr>
   			<tr>
-   				<td>Osasto</td>
-    			<td>Osasto</td>
-    			<td>Osasto</td>
-    			<td>Osasto</td>
-				<td>Osasto</td>
-    			<td>Osasto</td>
-    			<td>Osasto</td>
+   				<td>Osasto X</td>
+    			<td>Osasto X</td>
+    			<td>Osasto Y</td>
+    			<td>-</td>
+				<td>-</td>
+    			<td>Osasto y</td>
+    			<td>Osasto X</td>
   			</tr>
 		</table>
 
@@ -84,63 +84,67 @@
 
 		<h1 id="jasenet">Tietosi</h1>
 		
-		<P>Etunimi</P>
-		<p>Sukunimi</P>
-		<P>Osoite</P>
-		<p>Postinumero ja kaupunki</P>
-		<P>Sähköpostiosoite</P>
-		<p>Puhelinnumero</P>
+		<P>Etunimi: Maija</P>
+		<p>Sukunimi: Meikäläinen</P>
+		<P>Osoite: Katu 14 A 78</P>
+		<p>Postinumero ja kaupunki: 00530 Helsinki</P>
+		<P>Sähköpostiosoite: maija.meikalainen@sairaala.fi</P>
+		<p>Puhelinnumero: 040 657 7365</P>
 		
 		<div class="container mt-3">
-  			<!-- Button to Open the Modal -->
+  			<!-- Modaalin aukaisu nappi -->
   			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
     			MUOKKAA TIETOJASI
   			</button>
 
-  			<!-- The Modal -->
  			<div class="modal fade" id="myModal">
-    		<div class="modal-dialog">
-      		<div class="modal-content">
+    			<div class="modal-dialog">
+      				<div class="modal-content">
       
-        	<!-- Modal Header -->
-        	<div class="modal-header">
-          		<h4 class="modal-title">Muuta tietoja</h4>
+        				<!-- Modaalin otsikko-->
+        				<div class="modal-header">
+          					<h4 class="modal-title">Muuta tietoja</h4>
 
-          		<button type="button" class="close" data-dismiss="modal">×</button>
-        	</div>
+          					<button type="button" class="close" data-dismiss="modal">×</button>
+        				</div>
         
-        	<!-- Modal body -->
-        	<div class="modal-body">
-          		<div class="container">
-              		<label for="uname"><b>Etunimi</b></label>
-              		<input type="text" placeholder="etunimi" name="uname" required>
-              		<br>
-              		<label for="uname"><b>Sukunimi</b></label>
-              		<input type="text" placeholder="Sukunimi" name="uname" required> 
-            	</div>
-        	</div>
+        				<!-- Modaalin kentät -->
+        				<div class="modal-body">
+          					<div class="container">
+              					<label for="uname"><b>Etunimi</b></label>
+              					<input type="text" placeholder="Etunimi" name="uname" required>
+              					<br>
+              					<label for="uname"><b>Sukunimi</b></label>
+              					<input type="text" placeholder="Sukunimi" name="uname" required> 
+              					<br>
+              					<label for="uname"><b>Osoite</b></label>
+              					<input type="text" placeholder="Katu 4 A 10, 00100 Kaupunki" name="uname" required>
+              					<br> 
+              					<label for="uname"><b>Sähköposti</b></label>
+              					<input type="text" placeholder="etunimi.sukunumu@sairaala.fi" name="uname" required> 
+              					<b>
+              					<label for="uname"><b>Puhelinnumero</b></label>
+              					<input type="text" placeholder="0401234567" name="uname" required> 
+            				</div>
+        				</div>
         
-        	<!-- Modal footer -->
-        	<div class="modal-footer">
-          		<button type="button" class="btn btn-danger" data-dismiss="modal">Muuta tiedot</button>
-        	</div>
+        				<!-- Modaalin alaotsikko -->
+        				<div class="modal-footer">
+          					<button type="button" class="btn btn-danger" data-dismiss="modal">Muuta tiedot</button>
+        				</div>
         
-      	</div>
-    </div>
-  </div>
+      				</div>
+    			</div>
+  			</div>
   
-</div>
+		</div>
 
 
-	
-
-
-		<P>Työsuhde</P>
-		<P>Työrooli</P>
-		<p>Työsuhteen alkamispäivä</P>
-
-		<P>Esimies</P>
-		<p>Yksikkö</P>
+		<P>Työsuhde: Vakituinen</P>
+		<P>Työrooli: Sairaanhoitaja</P>
+		<p>Työsuhteen alkamispäivä: 1.1.2020</P>
+		<P>Esimies: Milla Esihenkilö</P>
+		<p>Yksikkö: Sairaala X, osasto Y.</P>
 
 
 		</section>
@@ -169,8 +173,29 @@
 
 <script type="text/javascript">
 	
-	var d = new Date();
-	document.getElementById("tanaan").innerHTML = d;
+	var day1 = new Date();
+	var day2 = new Date();
+	day2.setDate(day1.getDate() + 1);
+	var day3 = new Date();
+	day3.setDate(day1.getDate() + 2);
+	var day4 = new Date();
+	day4.setDate(day1.getDate() + 3);
+	var day5 = new Date();
+	day5.setDate(day1.getDate() + 4);
+	var day6 = new Date();
+	day6.setDate(day1.getDate() + 5);
+	var day7 = new Date();
+	day7.setDate(day1.getDate() + 6);
+	
+	
+	document.getElementById("day1").innerHTML = day1.getDate() + "/" + (day1.getMonth()+1);
+	document.getElementById("day2").innerHTML = day2.getDate() + "/" + (day2.getMonth()+1);
+	document.getElementById("day3").innerHTML = day3.getDate() + "/" + (day3.getMonth()+1);
+	document.getElementById("day4").innerHTML = day4.getDate() + "/" + (day4.getMonth()+1);
+	document.getElementById("day5").innerHTML = day5.getDate() + "/" + (day5.getMonth()+1);
+	document.getElementById("day6").innerHTML = day6.getDate() + "/" + (day6.getMonth()+1);
+	document.getElementById("day7").innerHTML = day7.getDate() + "/" + (day7.getMonth()+1);
+
 	
 </script>
 
