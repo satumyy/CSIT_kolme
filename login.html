@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
         <link rel="stylesheet" href="csit_tyylit.css">
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
@@ -24,29 +25,31 @@
             <div class="nav-wrapper">
                 <div class="left-side">
                     <div class="nav-link-wrapper active-nav-link">
-                        <a href="login.html">KIRJAUDU SISÄÄN</a>
+                        <a href="login.html"></a>
                     </div>
                   </div>     
            </div>
            <div>
           
-            <div class="container" container id="container">
+            <div class="container" id="login">
               <label for="uname"><b>KÄYTTÄJÄTUNNUS</b></label> <br>
-              <input type="text" placeholder="etunimi.sukunimi@sairaala.fi" name="uname" required> <br> <br>
+              <input type="text" placeholder="etunimi.sukunimi@sairaala.fi" name="uname" required> <br> <br> <br>
           
               <label for="psw"><b>SALASANA</b></label> <br>
               <input type="password" name="psw" required> <br> <br> <br>
           
               <button type="button" onclick="toFrontpage()" >KIRJAUDU</button> <br> <br>
               <label>
-                <input type="checkbox" checked="checked" name="remember"> MUISTA MINUT
-              </label>
+                <input type="checkbox" checked="checked" name="remember"> <c>Muista minut</c>
+              </label> <br>
+
+          
+             <span class="psw"><a href="#">Unohtuiko salasana?</a></span>
+              
+            </div>
             </div>
           
-            <div class="container" psw id="forget">
-              <span class="psw"><a href="#">Unohtuiko salasana?</a></span>
-            </div>
-          </div>
+
            <div class="content-wrapper">
                
            </div>

@@ -5,6 +5,7 @@
 
 	<title>Tervetuloa</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="text/css" rel="stylesheet" href="csit_tyylit.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com"> 
 	<link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">  
@@ -82,72 +83,78 @@
 		<P>Tuleville päiville olisi vapaita työvuoroja osastolla x. Ilmoittaudu työvuoroon tästä!</P>
 
 
-		<h1 id="jasenet">Tietosi</h1>
-		
-		<P>Etunimi: Maija</P>
-		<p>Sukunimi: Meikäläinen</P>
-		<P>Osoite: Katu 14 A 78</P>
-		<p>Postinumero ja kaupunki: 00530 Helsinki</P>
-		<P>Sähköpostiosoite: maija.meikalainen@sairaala.fi</P>
-		<p>Puhelinnumero: 040 657 7365</P>
-		
-		<div class="container mt-3">
-  			<!-- Modaalin aukaisu nappi -->
-  			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    			MUOKKAA TIETOJASI
-  			</button>
+		<div class="container mt-3" id="change">
+			<!-- Modaalin aukaisu nappi -->	
+		<h1>Tietosi</h1>	<button type="button" id ="info" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> MUOKKAA TIETOJASI </button>
 
- 			<div class="modal fade" id="myModal">
-    			<div class="modal-dialog">
-      				<div class="modal-content">
-      
-        				<!-- Modaalin otsikko-->
-        				<div class="modal-header">
-          					<h4 class="modal-title">Muuta tietoja</h4>
+		   <div class="modal fade" id="myModal">
+			  <div class="modal-dialog">
+					<div class="modal-content">
+	
+					  <!-- Modaalin otsikko-->
+					  <div class="modal-header">
+							<h4 class="modal-title">Muuta tietoja</h4>
 
-          					<button type="button" class="close" data-dismiss="modal">×</button>
-        				</div>
-        
-        				<!-- Modaalin kentät -->
-        				<div class="modal-body">
-          					<div class="container">
-              					<label for="uname"><b>Etunimi</b></label>
-              					<input type="text" placeholder="Etunimi" name="uname" required>
-              					<br>
-              					<label for="uname"><b>Sukunimi</b></label>
-              					<input type="text" placeholder="Sukunimi" name="uname" required> 
-              					<br>
-              					<label for="uname"><b>Osoite</b></label>
-              					<input type="text" placeholder="Katu 4 A 10, 00100 Kaupunki" name="uname" required>
-              					<br> 
-              					<label for="uname"><b>Sähköposti</b></label>
-              					<input type="text" placeholder="etunimi.sukunumu@sairaala.fi" name="uname" required> 
-              					<b>
-              					<label for="uname"><b>Puhelinnumero</b></label>
-              					<input type="text" placeholder="0401234567" name="uname" required> 
-            				</div>
-        				</div>
-        
-        				<!-- Modaalin alaotsikko -->
-        				<div class="modal-footer">
-          					<button type="button" class="btn btn-danger" data-dismiss="modal">Muuta tiedot</button>
-        				</div>
-        
-      				</div>
-    			</div>
-  			</div>
-  
+							<button type="button" class="close" data-dismiss="modal">×</button>
+					  </div>
+	  
+					  <!-- Modaalin kentät -->
+					  <div class="modal-body">
+							<div class="container" id="tiedot">
+								<label for="uname"><b>Etunimi: </b></label>
+								<br>
+								<input type="text" placeholder="Etunimi" name="uname" required>
+								<br><br>
+								<label for="uname"><b>Sukunimi: </b></label>
+								<br>
+								<input type="text" placeholder="Sukunimi" name="uname" required> 
+								<br><br>
+								<label for="uname"><b>Osoite: </b></label>
+								<br>
+								<input type="text" placeholder="Katu 4 A 10, 00100 Kaupunki" name="uname" required>
+								<br><br>
+								<label for="uname"><b>Sähköposti: </b></label>
+								<br>
+								<input type="text" placeholder="etunimi.sukunumu@sairaala.fi" name="uname" required> 
+								<br><br>
+								<label for="uname"><b>Puhelinnumero: </b></label> 
+								<br>
+								<input type="text" placeholder="0401234567" name="uname" required>
+								<br>
+						  </div>
+					  </div>
+	  
+					  <!-- Modaalin alaotsikko -->
+					  <div class="modal-footer">
+							<button type="button" id="nappi" class="btn btn-danger" data-dismiss="modal">Muuta tiedot</button>
+					  </div>
+	  
+					</div>
+			  </div>
+		</div>
+	  </div>
+	
+	
+
+			<P>Etunimi: Maija</p>
+			<p>Sukunimi: Meikäläinen</p> 
+			<P>Osoite: Katu 14 A 78</p> 
+			<p>Postinumero ja kaupunki: 00530 Helsinki</p> 
+			<P>Sähköpostiosoite: maija.meikalainen@sairaala.fi</p> 
+			<p>Puhelinnumero: 040 657 7365</p> <br><br>
+
+		<div id="vakio">
+			<p>Työsuhde: Vakituinen</p> 
+			<p>Työrooli: Sairaanhoitaja</p>
+			<p>Työsuhteen alkamispäivä: 1.1.2020</p> 
+			<p>Esimies: Milla Esihenkilö</p> 
+			<p>Yksikkö: Sairaala X, osasto Y.</p> 
 		</div>
 
 
-		<P>Työsuhde: Vakituinen</P>
-		<P>Työrooli: Sairaanhoitaja</P>
-		<p>Työsuhteen alkamispäivä: 1.1.2020</P>
-		<P>Esimies: Milla Esihenkilö</P>
-		<p>Yksikkö: Sairaala X, osasto Y.</P>
 
 
-		</section>
+		
 	</section>
 
 
