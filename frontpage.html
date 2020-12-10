@@ -33,7 +33,7 @@
 
 	<nav id="nav">
 		<ul>
-			<li><a href="#OMATTIEDOT">OMAT TIETOSI</a></li>
+			<li><a href="#vakio">OMAT TIETOSI</a></li>
   			<li><a href="login.html">KIRJAUDU ULOS</a></li>
   		</ul>
 	</nav>
@@ -82,24 +82,28 @@
 
 		<P>Tuleville päiville olisi vapaita työvuoroja osastolla x. Ilmoittaudu työvuoroon tästä!</P>
 
+		<br>
+		<br>
+		<br>
 
+		
 		<div class="container mt-3" id="change">
 			<!-- Modaalin aukaisu nappi -->	
-		<h1>Tietosi</h1>	<button type="button" id ="info" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> MUOKKAA TIETOJASI </button>
+			<button type="button" id ="info" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> MUOKKAA TIETOJASI </button>
 
-		   <div class="modal fade" id="myModal">
-			  <div class="modal-dialog">
+		   	<div class="modal fade" id="myModal">
+			  	<div class="modal-dialog">
 					<div class="modal-content">
 	
 					  <!-- Modaalin otsikko-->
-					  <div class="modal-header">
+					  	<div class="modal-header">
 							<h4 class="modal-title">Muuta tietoja</h4>
 
 							<button type="button" class="close" data-dismiss="modal">×</button>
-					  </div>
+					  	</div>
 	  
-					  <!-- Modaalin kentät -->
-					  <div class="modal-body">
+					  	<!-- Modaalin kentät -->
+					  	<div class="modal-body">
 							<div class="container" id="tiedot">
 								<label for="uname"><b>Etunimi: </b></label>
 								<br>
@@ -120,30 +124,39 @@
 								<label for="uname"><b>Puhelinnumero: </b></label> 
 								<br>
 								<input type="text" placeholder="0401234567" name="uname" required>
+								<br><br>
+								<label for="uname"><b>Tilinumero: </b></label> 
 								<br>
-						  </div>
-					  </div>
+								<input type="text" placeholder="FI9412345678965" name="uname" required>
+								<br>
+						  	</div>
+					  	</div>
 	  
-					  <!-- Modaalin alaotsikko -->
-					  <div class="modal-footer">
+					  	<!-- Modaalin alaotsikko -->
+					  	<div class="modal-footer">
 							<button type="button" id="nappi" class="btn btn-danger" data-dismiss="modal">Muuta tiedot</button>
-					  </div>
+					  	</div>
 	  
 					</div>
-			  </div>
-		</div>
-	  </div>
-	
-	
+			  	</div>
+			</div>
+	  	</div>
+		
+		<div id="vakio">
+			<h1>Tietosi</h1>
 
 			<P>Etunimi: Maija</p>
 			<p>Sukunimi: Meikäläinen</p> 
 			<P>Osoite: Katu 14 A 78</p> 
 			<p>Postinumero ja kaupunki: 00530 Helsinki</p> 
 			<P>Sähköpostiosoite: maija.meikalainen@sairaala.fi</p> 
-			<p>Puhelinnumero: 040 657 7365</p> <br><br>
+			<p>Puhelinnumero: 040 657 7365</p> 
+			<p>Tilinumero: FI9412345678965</p>
+		
 
-		<div id="vakio">
+			<br><br><br><br>
+
+		
 			<p>Työsuhde: Vakituinen</p> 
 			<p>Työrooli: Sairaanhoitaja</p>
 			<p>Työsuhteen alkamispäivä: 1.1.2020</p> 
