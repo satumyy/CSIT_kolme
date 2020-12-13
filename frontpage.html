@@ -34,7 +34,7 @@
 	<nav id="nav">
 		<ul>
 			<li><a href="#vakio">OMAT TIETOSI</a></li>
-  			<li><a href="login.html">KIRJAUDU ULOS</a></li>
+  			<li><a href="index.html">KIRJAUDU ULOS</a></li>
   		</ul>
 	</nav>
 
@@ -163,6 +163,38 @@
 			<p>Esimies: Milla Esihenkilö</p> 
 			<p>Yksikkö: Sairaala X, osasto Y.</p> 
 		</div>
+
+		<div class="container mt-3" id="myModal">
+			<!-- Modaalin aukaisu nappi -->	
+			<button type="button" id ="info" class="btn btn-primary" data-toggle="modal" data-target="#remove"> Tietojen poisto </button>
+
+		   	<div class="modal fade" id="remove">
+			  	<div class="modal-dialog">
+					<div class="modal-content">
+	
+					  <!-- Modaalin otsikko-->
+					  	<div class="modal-header">
+							<h4 class="modal-title">Haluatko varmasti poistaa kaikki tiedot?</h4>
+
+							<button type="button" class="close" data-dismiss="modal">×</button>
+					  	</div>
+
+					  	<div class="form-check">
+      						<label class="form-check-label" for="check1">
+       							<input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Kyllä
+      						</label>
+    					</div>
+
+	  
+					  	<!-- Modaalin alaotsikko -->
+					  	<div class="modal-footer">
+							<button type="button" id="nappi" class="btn btn-danger" data-dismiss="modal">Poista tiedot</button>
+					  	</div>
+	  
+					</div>
+			  	</div>
+			</div>
+	  	</div>
 
 
 
