@@ -10,6 +10,7 @@ body{
     padding: 0;
     margin: 0px;
     position: relative; 
+
 }
 
 
@@ -22,7 +23,7 @@ body{
 	background-color: transparent;
 	font-family: 'Catamaran', sans-serif;
 	color: white;
-	font-size: clamp(1rem, 6vw, 6rem);
+	font-size: clamp(1rem, 6vw, 5rem);
 	text-shadow: 2px 2px 3px black, 0px 0px 10px #3C2F30;
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -99,7 +100,7 @@ body{
 	background-color: transparent;
 	font-family: 'Catamaran', sans-serif;
 	color: white;
-	font-size: clamp(1rem, 8vw, 6rem);
+	font-size: clamp(1rem, 8vw, 5rem);
 	text-shadow: 2px 2px 3px black, 0px 0px 10px #3C2F30;
 	padding-top: 10%;
 	padding-bottom: 10%;
@@ -114,7 +115,7 @@ body{
 	width: 100%;
 	background-color: white;
 	font-family: 'Catamaran', sans-serif;
-	font-size: clamp(1rem, 5vw, 3rem);
+	font-size: clamp(1rem, 5vw, 2rem);
     list-style-type: none;
     margin: 0%;
     padding: 0%;
@@ -150,12 +151,13 @@ body{
 	float: center; 
 	box-align: center;
 	width: 100%;
+	overflow: hidden;
 }
 
 #row1 p{
 	padding: 2%;
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw, 2rem);
+	font-size: clamp(1rem, 4vw, 1.5rem);
 	padding-top: 2%;
 	padding-bottom: 0;
 	margin-left: 8%;
@@ -166,7 +168,7 @@ body{
 #vakio p{
 	padding: 2%;
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw, 2rem);
+	font-size: clamp(1rem, 4vw, 1.5rem);
 	padding-top: 2%;
 	padding-bottom: 0;
 	margin-left: 8%;
@@ -177,7 +179,7 @@ body{
 
 #row1 h1{
 	font-family: 'Catamaran', sans-serif;
-	font-size: clamp(1rem, 6vw, 4rem);
+	font-size: clamp(1rem, 6vw, 2rem);
 	padding-top: 6%;
 	padding-bottom: 3%;
 	margin-left: 10%;
@@ -190,7 +192,7 @@ body{
 
 #schedule {
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(0.7rem, 3vw, 2rem);
+	font-size: clamp(0.7rem, 3vw, 1.5rem);
 	border-collapse: collapse;
 	width: 80%;
 	margin-left: auto;
@@ -225,13 +227,13 @@ body{
 
 #change h1{
 	font-family: 'Catamaran', sans-serif;
-	font-size: clamp(1rem, 4vw, 2rem);
+	font-size: clamp(1rem, 4vw, 1.5rem);
 	margin-left: 13%;
 }
 
 #info {
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw, 2rem);
+	font-size: clamp(1rem, 4vw,1.5rem);
 	background-color: #356B9C;
 	color: white;
   	padding: 14px 14px;
@@ -243,7 +245,7 @@ body{
 
 #info:hover{
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw, 2rem);
+	font-size: clamp(1rem, 4vw, 1.5rem);
 	background-color: white;
 	color: black;
 	padding: 14px 14px;
@@ -259,7 +261,7 @@ body{
 .modal-title{
 
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw, 2rem);
+	font-size: clamp(1rem, 4vw, 1.5rem);
 	font-weight: bold;
 	padding-left: 5%;
 
@@ -267,14 +269,14 @@ body{
 
 #tiedot {
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 3vw, 2rem);
+	font-size: clamp(1rem, 3vw, 1.5rem);
 	font-weight: normal;
 	padding-left: 5%;
 }
 
 #nappi{
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw, 2rem);
+	font-size: clamp(1rem, 4vw, 1.5rem);
 	background-color: #356B9C;
 	color: white;
   	padding: 14px 25px;
@@ -287,7 +289,7 @@ body{
 
 #nappi:hover{
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw, 2rem);
+	font-size: clamp(1rem, 4vw, 1.5rem);
 	background-color: white;
 	color: black;
 	padding: 14px 25px;
