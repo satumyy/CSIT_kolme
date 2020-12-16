@@ -165,17 +165,6 @@ body{
 	font-weight: normal;
 }
 
-#vakio p{
-	padding: 2%;
-	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw, 1.5rem);
-	padding-top: 2%;
-	padding-bottom: 0;
-	margin-left: 8%;
-	text-align: left;
-	font-weight: bold;
-}
-
 
 #row1 h1{
 	font-family: 'Catamaran', sans-serif;
@@ -215,6 +204,32 @@ body{
 #schedule td{
 	text-align: center;
 }
+/*henkilön omat tiedot*/
+
+#tiedot {
+	font-family: 'Roboto', sans-serif;
+	font-size: clamp(0.7rem, 3vw, 1.5rem);
+	border-collapse: collapse;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tiedot th{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: left;
+	font-size: clamp(1.2rem, 4vw, 2rem);
+	color: #356B9C;
+}
+
+#tiedot td{
+	padding: 7px;
+	text-align: left;
+}
+	
+
+
 
 
 /* tietojenmuokkauspainike */
@@ -222,7 +237,7 @@ body{
 #change {
 	padding-top: 3%;
 	padding-bottom: 3%;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 #change h1{
@@ -233,26 +248,25 @@ body{
 
 #info {
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw,1.5rem);
+	font-size: clamp(0.7rem, 3vw,1.2rem);
 	background-color: #356B9C;
 	color: white;
-  	padding: 14px 14px;
+  	padding: 10px 10px;
   	text-align: center;
   	text-decoration: none;
 	display: inline-block;
-	margin-left: 10%;
+	margin-left: 0%;
 }
 
 #info:hover{
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw, 1.5rem);
+	font-size: clamp(0.7rem, 3vw,1.2rem);
 	background-color: white;
 	color: black;
-	padding: 14px 14px;
+	padding: 10px 10px;
   	text-align: center;
   	text-decoration: none;
 	display: inline-block;
-	border: 1px white;
 }
 
 
@@ -267,7 +281,7 @@ body{
 
 }
 
-#tiedot {
+#tietojenmuuttaminen {
 	font-family: 'Roboto', sans-serif;
 	font-size: clamp(1rem, 3vw, 1.5rem);
 	font-weight: normal;
@@ -299,7 +313,11 @@ body{
 	border: 1px #356B9C;
 }
 
-
+#check1{
+	font-family: 'Roboto', sans-serif;
+	font-size: clamp(1rem, 4vw, 1.5rem);
+	text-align: center;
+}
  
 
 /* tiimin nimi */

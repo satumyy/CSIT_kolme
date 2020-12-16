@@ -80,22 +80,59 @@
 
 		<h1>Ilmoitukset</h1>
 
-		<P>Tuleville päiville olisi vapaita työvuoroja osastolla x. Ilmoittaudu työvuoroon tästä!</P>
+		<P>Tuleville päiville olisi vapaita työvuoroja osastolla x. Ilmoittaudu työvuoroon osastonsihteerille! Simpsakka Sihteeri, 040 123 4567.</P>
 
 		<br>
 		<br>
 		<br>
 
-		
+	
+		<table id="tiedot">
+  			<tr>
+   				<th>TIETOSI</th>
+    			<th></th> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Etunimi:</td>
+    			<td>Maija</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Sukunimi:</td>
+    			<td>Meikäläinen</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Osoite:</td>
+    			<td>Katu 14 A 78</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Postinumero ja kaupunki:</td>
+    			<td>00530 Helsinki</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Sähköpostiosoite:</td>
+    			<td>Maija.meikalainen@sairaala.fi</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Puhelinnumero:</td>
+    			<td>040 657 7365</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Tilinumero:</td>
+    			<td>FI9412345678965</td> 
+  			</tr>
+  			<tr>
+   				<td ><button type="button" id ="info" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> MUOKKAA TIETOJASI </button></td>
+    			<td></td> 
+  			</tr>
+		</table>
+
+
 		<div class="container mt-3" id="change">
-			<!-- Modaalin aukaisu nappi -->	
-			<button type="button" id ="info" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> MUOKKAA TIETOJASI </button>
-
 		   	<div class="modal fade" id="myModal">
 			  	<div class="modal-dialog">
 					<div class="modal-content">
 	
-					  <!-- Modaalin otsikko-->
+					  	<!-- Modaalin otsikko-->
 					  	<div class="modal-header">
 							<h4 class="modal-title">Voit muuttaa yhtä tai useampaa tietoa.</h4>
 
@@ -104,7 +141,7 @@
 	  
 					  	<!-- Modaalin kentät -->
 					  	<div class="modal-body">
-							<div class="container" id="tiedot">
+							<div class="container" id="tietojenmuuttaminen">
 								<label for="uname"><b>Etunimi: </b></label>
 								<br>
 								<input type="text" placeholder="Etunimi" name="uname" required>
@@ -147,49 +184,60 @@
 	
 					  <!-- Modaalin otsikko-->
 					  	<div class="modal-header">
-							<h4 class="modal-title">Olet muuttanut tietojasi. Osa tiedoista tarvitsee varmistuksen HR:ltä ja ne muutuvat automaattisesti varmistuksen jälkeen.</h4>
+							<h4 class="modal-title">Olet muuttanut tietojasi. Osa tiedoista tarvitsee varmistuksen HR:ltä ja ne muuttuvat automaattisesti varmistuksen jälkeen.</h4>
 
 							<button type="button" class="close" data-dismiss="modal">×</button>
 					  	</div>
-	  
-					  
 	  
 					  	<!-- Modaalin alaotsikko -->
 					  	<div class="modal-footer">
 							<button type="button" id="nappi" class="btn btn-danger" data-dismiss="modal">Sulje</button>
 					  	</div>
-	  
 					</div>
 			  	</div>
 			</div>
-
 	  	</div>
-		
-		<div id="vakio">
-			<h1>Tietosi</h1>
 
-			<P>Etunimi: Maija</p>
-			<p>Sukunimi: Meikäläinen</p> 
-			<P>Osoite: Katu 14 A 78</p> 
-			<p>Postinumero ja kaupunki: 00530 Helsinki</p> 
-			<P>Sähköpostiosoite: maija.meikalainen@sairaala.fi</p> 
-			<p>Puhelinnumero: 040 657 7365</p> 
-			<p>Tilinumero: FI9412345678965</p>
-		
 
-			<br><br><br><br>
 
-		
-			<p>Työsuhde: Vakituinen</p> 
-			<p>Työrooli: Sairaanhoitaja</p>
-			<p>Työsuhteen alkamispäivä: 1.1.2020</p> 
-			<p>Esimies: Milla Esihenkilö</p> 
-			<p>Yksikkö: Sairaala X, osasto Y.</p> 
-		</div>
+
+		<table id="tiedot">
+			<tr>
+   				<th>TYÖSUHTEEN TIEDOT</th>
+    			<th></th> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Työsuhde:</td>
+    			<td>Vakituinen</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Työrooli:</td>
+    			<td>Sairaanhoitaja</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Esimies:</td>
+    			<td>Milla Esihenkilö</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Työnantaja:</td>
+    			<td>Sairaala Hoiva</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Yksikkö:</td>
+    			<td>Osasto X</td> 
+  			</tr>
+  			<tr>
+   				<td class="font-weight-bolder">Sukunimi:</td>
+    			<td>Meikäläinen</td> 
+  			</tr>
+  			<tr>
+   				<td><button type="button" id ="info" class="btn btn-primary" data-toggle="modal" data-target="#remove"> POISTA TIEDOT</button></td>
+    			<td></td> 
+  			</tr>
+		</table>
+
 
 		<div class="container mt-3" id="myModal">
-			<!-- Modaalin aukaisu nappi -->	
-			<button type="button" id ="info" class="btn btn-primary" data-toggle="modal" data-target="#remove"> Tietojen poisto </button>
 
 		   	<div class="modal fade" id="remove">
 			  	<div class="modal-dialog">
@@ -198,20 +246,20 @@
 					  <!-- Modaalin otsikko-->
 					  	<div class="modal-header">
 							<h4 class="modal-title">Haluatko varmasti poistaa kaikki tiedot?</h4>
+							<p>
 
 							<button type="button" class="close" data-dismiss="modal">×</button>
 					  	</div>
 
 					  	<div class="form-check">
       						<label class="form-check-label" for="check1">
-       							<input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Kyllä
+       							<input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" >Kyllä
       						</label>
     					</div>
 
-	  
 					  	<!-- Modaalin alaotsikko -->
 					  	<div class="modal-footer">
-							<button type="button" id="nappi" class="btn btn-danger" data-dismiss="modal">Poista tiedot</button>
+							<button type="button" id="nappi" class="btn btn-danger" data-dismiss="modal">Lähetä pyyntö tietojen poistamisesta</button>
 					  	</div>
 	  
 					</div>
@@ -226,14 +274,6 @@
 	</section>
 
 
-
-
-	
-
-
-	
-
-	
 
 	</main>
 	
