@@ -104,8 +104,8 @@ body{
 	text-shadow: 2px 2px 3px black, 0px 0px 10px #3C2F30;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	padding-right: 20%;
-	padding-left: 20%;
+	padding-right: 10%;
+	padding-left: 10%;
 }
 
 
@@ -170,7 +170,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size: clamp(1.2rem, 4vw, 2rem);
 	color: #356B9C;
-	padding-top: 6%;
+	padding-top: 8%;
 	padding-bottom: 1%;
 	margin-left: 10%;
 	text-align: left;
@@ -179,6 +179,7 @@ body{
 
 #ilmoitusteksti {
 	max-width: 800px;
+	margin-right: 8%;
 }
 
 
@@ -213,7 +214,7 @@ body{
 
 #tiedot {
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(0.7rem, 3vw, 1.5rem);
+	font-size: clamp(0.9rem, 3vw, 1.5rem);
 	border-collapse: collapse;
 	width: 80%;
 	margin-left: auto;
