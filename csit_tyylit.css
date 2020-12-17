@@ -102,8 +102,8 @@ body{
 	color: white;
 	font-size: clamp(1rem, 8vw, 5rem);
 	text-shadow: 2px 2px 3px black, 0px 0px 10px #3C2F30;
-	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	padding-right: 20%;
 	padding-left: 20%;
 }
@@ -175,6 +175,10 @@ body{
 	margin-left: 10%;
 	text-align: left;
 	display: inline-block;
+}
+
+#ilmoitusteksti {
+	max-width: 800px;
 }
 
 
@@ -273,7 +277,7 @@ body{
 }
 
 
-/* tietojenmuokkaus */
+/* tietojenmuokkaus ja poisto modaalit */
 
 .modal-title{
 
@@ -316,11 +320,73 @@ body{
 	border: 1px #356B9C;
 }
 
-#check1{
-	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 4vw, 1.5rem);
-	text-align: center;
+/* checkbox muotoilut */
+.containerCheck {
+  display: block;
+  position: relative;
+  padding-left: 35;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
+/* piilottaa selaimen oman laatikon */
+.containerCheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #eee;
+}
+
+
+.containerCheck:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCheck input:checked ~ .checkmark {
+  background-color: #356B9C;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerCheck input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerCheck .checkmark:after {
+  left: 7px;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
  
 
 /* tiimin nimi */
